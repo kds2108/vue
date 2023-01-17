@@ -25,12 +25,11 @@
         >
         <a v-bind:href="href">{{href}}</a>
         <h1>{{title}}</h1>
-        <button @click="handleChange">button 1</button>
-        <button @click="handleChange">button 2</button>
+        <button @click="handleChange('one')">button 1</button>
+        <button @click="handleChange('two')">button 2</button>
     </template>
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="js/main.js"></script>
-    
     
 </body>

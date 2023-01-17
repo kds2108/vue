@@ -8,8 +8,8 @@ const app = Vue.createApp({
         }
     },
     methods: {
-        handleChange(e) {
-            this.title = e.target.value;
+        handleChange(title) {
+            this.title = title
         }
     }
 });
