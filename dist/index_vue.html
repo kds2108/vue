@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VUE</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+ 
+<body>
+
+    <div class="title">Title</div>
+
+    <div class="one">
+        Soy un div two
+    </div>
+
+    <div id="root"></div>
+    
+    <template id="app">
+        <input type="text" id="input" 
+            v-on:input="handleChange"
+            v-on:focus="handleChange"
+        >
+        <a v-bind:href="href">{{href}}</a>
+        <h1>{{title}}</h1>
+        <button @click="handleChange">button 1</button>
+        <button @click="handleChange">button 2</button>
+    </template>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="js/main.js"></script>
+    
+</body>
