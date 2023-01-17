@@ -7,6 +7,7 @@ const app = Vue.createApp({
             href: "https://www.goodreads.com/"
         }
     },
+    
     methods: {
         handleChange(title) {
             this.title = title
