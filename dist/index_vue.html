@@ -19,14 +19,12 @@
     <div id="root"></div>
     
     <template id="app">
-        <input type="text" id="input" 
-            v-on:input="handleChange"
-            v-on:focus="handleChange"
-        >
-        <a v-bind:href="href">{{href}}</a>
+        
         <h1>{{title}}</h1>
-        <button @click="handleChange('one')">button 1</button>
-        <button @click="handleChange('two')">button 2</button>
+        <h2>{{subtitle}}</h2>
+
+        <button @click="title = 'another one'">button 1</button>
+       
     </template>
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
